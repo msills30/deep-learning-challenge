@@ -11,16 +11,16 @@ hidden_nodes_layer2 = 5
 
 nn = tf.keras.models.Sequential()
 
-# First hidden layer
+ First hidden layer
 nn.add(tf.keras.layers.Dense(units=hidden_nodes_layer1, input_dim=number_input_features, activation="relu"))
 
-# Second hidden layer
+ Second hidden layer
 nn.add(tf.keras.layers.Dense(units=hidden_nodes_layer2, activation="relu"))
 
-# Output layer
+Output layer
 nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
 
-# Check the structure of the model
+Check the structure of the model
 nn.summary()
 
 The given output goes as followed 
